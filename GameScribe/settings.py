@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'GameScribe.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': '23Xt3uNhk1aNyJ5u4dLq',
+        'HOST': 'containers-us-west-190.railway.app',
+        'PORT': '7328',
     }
 }
 
